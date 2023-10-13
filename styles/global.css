@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+.app {
+        @apply font-poppins;
+}
+
+/* Navbar */
+.navbar {
+        @apply flex items-center justify-between bg-navBg px-[20px] h-[80px];
+}
+
+.nav-header {
+        @apply font-[700] text-[30px] leading-[42px];
+}
+
+.btn {
+        @apply rounded-full px-[10px] py-[7px] bg-white mx-2 flex items-center justify-center w-max; 
+}
+
+.btn>img {
+        @apply mr-[5px];
+}
+
+.btn-val {
+        @apply ml-[5px];
+}
+
+.nav-options {
+        @apply flex;
+}
+
+/* HomeLayout Styles */
+.home-layout {
+        @apply border border-green-500 flex justify-between items-start h-[100%] w-[100%];
+}
+
+.left-sec {
+        @apply border border-red-500 flex flex-col w-max mr-2;
+}
+
+.right-sec {
+        @apply border border-red-500 ml-2 w-[100%];
+}
+
+.category-right {
+        @apply flex flex-col justify-between items-start;
+}
+
+.category-right > h1 {
+        @apply text-2xl font-bold;
+}
+
+.category-prods {
+        @apply flex justify-start items-center mx-5 w-[90%];
+}
+
+.category-prod {
+        @apply flex flex-col justify-between items-start border border-blue-500 mx-3 my-2;
+}
